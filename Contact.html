@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+<style>
+body {
+margin: 0px;
+}
+.form-container {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  display: grid;
+  place-items: center;
+}
+</style>
+<div class="form-container">
+<div class="contact"><center><div class="container4">
+<div class="column is-half">
+      <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+        <!-- Replace with your StaticForms accessKey -->
+        <input type="hidden" name="accessKey" value="4678bf01-515e-40c4-9c3f-4d4241c1cd74">
+        <!-- Replace with the url you want to redirect to -->
+        <input type="hidden" name="redirectTo" value="https://PrimeBot.ml/Contact">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" name="name" placeholder="Enter Your Name" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" name="email" placeholder="Enter Your Email" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" name="message" placeholder="Enter Your Message" required></textarea>
+          </div>
+        </div>
+        <button class="button is-primary" type="Submit">Submit</button>
+      </form>
+</div>
+</div>
